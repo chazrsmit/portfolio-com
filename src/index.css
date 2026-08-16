@@ -5,12 +5,14 @@
 
 html, body, #root {
     scrollbar-width: none;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
     margin: 0;
+    /* background: url("./images/backgroundsite-pink.png"); */
+    background: linear-gradient(to right, rgb(244, 243, 243) 0%, rgb(219, 219, 219) 100%);
 }
 
 #root {
