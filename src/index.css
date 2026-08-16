@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Baskerville";
+    src: local("BBBBaskervvol-Regular"), url("./fonts/BBBBaskervvol-Book.otf")
+}
+
+html, body, #root {
+    scrollbar-width: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
