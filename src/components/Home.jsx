@@ -68,7 +68,7 @@ export default function Home() {
                 <AnimatePresence mode="wait">
                 {isOpened &&
                     <motion.div
-                        className="contenu"
+                        className="contenu d-flex align-items-start"
                         // initial={{ opacity: 0, y: -20 }}
                         // animate={{ opacity:1 , y: 0 }}
                         // exit={{ opacity: 0, y: -20 }}
@@ -313,7 +313,7 @@ export default function Home() {
                                 </div>
                                 {selectedText === "seven" &&
                                     <div>
-                                        <p><b><i>Speak no evil: L’art du savoir-dire</i></b>
+                                        <p><b><i>Speak no evil : L’art du savoir-dire</i></b>
                                         <br/><br/>
                                         Un passage remarqué à Sundance cette année pour Speak No Evil , film d’horreur satirique et sans pitié qui détient le potentiel de devenir une œuvre culte du genre. Une mise à mal de la politesse, plus terrifiante que n'importe quel tueur masqué.
                                         <br/><br/>
@@ -336,6 +336,63 @@ export default function Home() {
                             <p>(Et bien d'autres types de textes, en anglais et français...)</p>
                         }
                         </div> 
+                        }
+                        {/* newsletters */}
+                        {element ==="newsletters" &&
+                        <div className="newsletters d-flex gap-2">
+                                <video
+                                    width="100%"
+                                    style={{ aspectRatio: '16/9' }}
+                                    controls
+                                    playsInline
+                                    muted
+                                    autoPlay
+                                    loop
+                                    className={`${selected === "vid1" ? 'selected' : null}`}
+                                    onMouseEnter={() => setSelected("vid1")} onMouseLeave={() => setSelected(null)}
+                                >   
+                                        <source src="./images/batard1.mp4" type="video/mp4" />
+                                </video>
+                                <video
+                                    width="100%"
+                                    style={{ aspectRatio: '16/9' }}
+                                    controls
+                                    playsInline
+                                    muted
+                                    autoPlay
+                                    loop
+                                    className={`${selected === "vid2" ? 'selected' : null}`}
+                                    onMouseEnter={() => setSelected("vid2")} onMouseLeave={() => setSelected(null)}
+                                >   
+                                        <source src="./images/batard2.mp4" type="video/mp4" />
+                                </video>      
+                                <video
+                                    width="100%"
+                                    style={{ aspectRatio: '16/9' }}
+                                    controls
+                                    playsInline
+                                    muted
+                                    autoPlay
+                                    loop
+                                    className={`${selected === "vid3" ? 'selected' : null}`}
+                                    onMouseEnter={() => setSelected("vid3")} onMouseLeave={() => setSelected(null)}
+                                >   
+                                        <source src="./images/batard3.mp4" type="video/mp4" />
+                                </video>
+                                <video
+                                    width="100%"
+                                    style={{ aspectRatio: '16/9' }}
+                                    controls
+                                    playsInline
+                                    muted
+                                    autoPlay
+                                    loop
+                                    className={`${selected === "vid4" ? 'selected' : null}`}
+                                    onMouseEnter={() => setSelected("vid4")} onMouseLeave={() => setSelected(null)}
+                                >   
+                                        <source src="./images/tinwwp.mp4" type="video/mp4" />
+                                </video> 
+                        </div>   
                         }
 
                     </motion.div>
