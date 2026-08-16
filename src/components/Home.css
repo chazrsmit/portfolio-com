@@ -1,0 +1,15 @@
+section {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: serif;
+}
+
+h2 > span:hover {
+    color: #3066BE;
+    cursor: pointer;
+}
