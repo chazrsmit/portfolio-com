@@ -115,8 +115,6 @@ export default function Home() {
                                 <img className={`type1 ${selected === "four" ? 'selected' : null}`} onMouseEnter={() => setSelected("four")} onMouseLeave={() => setSelected(null)} src="./images/poster-4.jpg" />
                                 <img className={`type1 ${selected === "six" ? 'selected' : null}`} onMouseEnter={() => setSelected("six")} onMouseLeave={() => setSelected(null)} src="./images/poster-5.png" />
                                 <img className={`type1 ${selected === "five" ? 'selected' : null}`} onMouseEnter={() => setSelected("five")} onMouseLeave={() => setSelected(null)} src="./images/poster-6.png" />
-                            </div>
-                            <div div className="d-flex gap-2">
                                 <img className={`type2 ${selected === "seven" ? 'selected' : null}`} onMouseEnter={() => setSelected("seven")} onMouseLeave={() => setSelected(null)} src="./images/poster-7.png" />
                                 <img className={`type1 ${selected === "ten" ? 'selected' : null}`} onMouseEnter={() => setSelected("ten")} onMouseLeave={() => setSelected(null)} src="./images/poster-8.png" />
                             </div>

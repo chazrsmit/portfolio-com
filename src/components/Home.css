@@ -1,5 +1,5 @@
 section.home {
-    padding-top: 7rem;
+    padding-top: 6rem;
     padding-left: 1rem;
     padding-right: 1rem;
     height: 100vh;
@@ -13,7 +13,7 @@ section.home {
 
 .titres {
     position:fixed;
-    top: 2rem;;
+    top: 1rem;;
     left: 1rem;
 }
 
@@ -62,18 +62,18 @@ h2 > span:hover, span.selected  {
 
 .contenu img {
     width: auto;
-    height: 200px;
+    height: 220px;
     filter: grayscale(1);
 }
 
 .contenu img.selected {
-    height: 400px;
+    height: 320px;
     filter: none;
 }
 
 .socials video {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     filter: grayscale(1);
 }
 
@@ -88,9 +88,9 @@ h2 > span:hover, span.selected  {
 }
 
 .socials video.selected {
-    height: 400px;
+    height: 320px;
     filter: none;
-    width: 400px;
+    width: 320px;
 }
 
 .socials {
