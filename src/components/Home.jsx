@@ -118,129 +118,9 @@ export default function Home() {
                             {/* SOCIAL MEDIA */}
 
                             {element === "socialmedia" &&
-                            ( isMobile ?
-                                <div className="socials d-flex flex-column align-items-start gap-2">
-                                    {/* row 1 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "one" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/fatmapost.jpg"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("one")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                        <div className={`media-placeholder ${selected === "two" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/zoneneutre-post.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("two")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                    </div>
-                                    {/* row 2 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "three" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type2"
-                                                src="./images/fb-cover.jpg"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("three")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-
-                                        <div className={`media-placeholder ${selected === "four" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/post-elisethere-modif.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("four")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                    </div>
-                                    {/* row 3*/}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "six" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/post-hni.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("six")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                        <div className={`media-placeholder ${selected === "five" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type2"
-                                                src="./images/fb-cover-v2.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("five")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                    </div>
-
-                                    {/* row 4 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "ten" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/social-1.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("ten")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-
-                                        <div className={`media-placeholder ${selected === "eleven" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/social-2.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("eleven")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                    </div>
-
-                                    {/* row 5 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "seven" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/batard-2.jpg"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("seven")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                        <div className={`media-placeholder video-placeholder ${selected === "nine" ? 'selected' : ''}`}>
-                                            <video
-                                                playsInline
-                                                muted
-                                                autoPlay
-                                                loop
-                                                onLoadedData={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("nine")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            >
-                                                <source
-                                                    src="./images/batard-vid.mp4"
-                                                    type="video/mp4"
-                                                />
-                                            </video>
-                                        </div>
-                                    </div>
-                                </div>
-                                :
-                                <div className="socials d-flex flex-column align-items-start gap-2">
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "one" ? 'selected' : ''}`}>
+                                <div className="socials d-flex align-items-start gap-2">
+                                  
+                                        <div className={` ${selected === "one" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
                                                 src="./images/fatmapost.jpg"
@@ -250,7 +130,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder ${selected === "two" ? 'selected' : ''}`}>
+                                        <div className={` ${selected === "two" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
                                                 src="./images/zoneneutre-post.png"
@@ -260,7 +140,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder ${selected === "three" ? 'selected' : ''}`}>
+                                        <div className={`${selected === "three" ? 'selected' : ''}`}>
                                             <img
                                                 className="type2"
                                                 src="./images/fb-cover.jpg"
@@ -270,7 +150,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder ${selected === "four" ? 'selected' : ''}`}>
+                                        <div className={` ${selected === "four" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
                                                 src="./images/post-elisethere-modif.png"
@@ -280,7 +160,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder ${selected === "six" ? 'selected' : ''}`}>
+                                        <div className={` ${selected === "six" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
                                                 src="./images/post-hni.png"
@@ -290,12 +170,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                    </div>
-
-
-                                    <div className="d-flex gap-2">
-
-                                        <div className={`media-placeholder ${selected === "five" ? 'selected' : ''}`}>
+                                        <div className={`${selected === "five" ? 'selected' : ''}`}>
                                             <img
                                                 className="type2"
                                                 src="./images/fb-cover-v2.png"
@@ -305,7 +180,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder ${selected === "ten" ? 'selected' : ''}`}>
+                                        <div className={` ${selected === "ten" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
                                                 src="./images/social-1.png"
@@ -315,7 +190,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder ${selected === "eleven" ? 'selected' : ''}`}>
+                                        <div className={` ${selected === "eleven" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
                                                 src="./images/social-2.png"
@@ -325,7 +200,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder ${selected === "seven" ? 'selected' : ''}`}>
+                                        <div className={` ${selected === "seven" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
                                                 src="./images/batard-2.jpg"
@@ -335,7 +210,7 @@ export default function Home() {
                                             />
                                         </div>
 
-                                        <div className={`media-placeholder video-placeholder ${selected === "nine" ? 'selected' : ''}`}>
+                                        <div className={` ${selected === "nine" ? 'selected' : ''}`}>
                                             <video
                                                 playsInline
                                                 muted
@@ -352,111 +227,17 @@ export default function Home() {
                                             </video>
                                         </div>
 
-                                    </div>
 
                                 </div>
-                            )
                             }
 
 
                             {/* POSTERS */}
 
                             {element === "posters" &&
-                            ( isMobile ?
-                                <div className="socials d-flex flex-column align-items-start gap-2">
-                                    {/* row1 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "one" ? 'selected' : ''}`}>
-                                            <img
-                                                src="./images/poster-1.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("one")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
 
-                                        <div className={`media-placeholder ${selected === "two" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/poster-2.jpg"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("two")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                    </div>
-                                    {/* row 2 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "three" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type2"
-                                                src="./images/poster-3.jpg"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("three")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
+                                <div className="socials d-flex align-items-start gap-2">
 
-                                        <div className={`media-placeholder ${selected === "four" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/poster-4.jpg"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("four")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-
-                                    </div>
-                                    {/* row 3 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "five" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/poster-6.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("five")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                        <div className={`media-placeholder ${selected === "seven" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type2"
-                                                src="./images/poster-7.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("seven")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                    </div>
-                                    {/* row 4 */}
-                                    <div className="d-flex gap-2">
-                                        <div className={`media-placeholder ${selected === "ten" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/poster-8.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("ten")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-
-                                        <div className={`media-placeholder ${selected === "six" ? 'selected' : ''}`}>
-                                            <img
-                                                className="type1"
-                                                src="./images/VIE.png"
-                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
-                                                onMouseEnter={() => setSelected("six")}
-                                                onMouseLeave={() => setSelected(null)}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            :
-                            // desktop
-                                <div className="socials d-flex flex-column align-items-start gap-2">
-
-                                    <div className="d-flex gap-2">
 
                                         <div className={`media-placeholder ${selected === "one" ? 'selected' : ''}`}>
                                             <img
@@ -507,8 +288,8 @@ export default function Home() {
                                             />
                                         </div>
 
-                                    </div>
-                                    <div className="d-flex gap-2">
+           
+                      
                                         <div className={`media-placeholder ${selected === "seven" ? 'selected' : ''}`}>
                                             <img
                                                 className="type2"
@@ -538,10 +319,7 @@ export default function Home() {
                                                 onMouseLeave={() => setSelected(null)}
                                             />
                                         </div>
-                                    </div>
-
-                                </div>
-                            )    
+                                </div>   
                             }
 
 
