@@ -10,6 +10,7 @@ export default function Home() {
     const [selected, setSelected] = useState(null)
     const [selectedText, setSelectedText] = useState(null)
     const [textIntro, setTextIntro] = useState(true)
+    const isMobile = window.innerWidth < 768
 
     const handleClick = (titre) => {
         setTextIntro(false)
@@ -117,10 +118,128 @@ export default function Home() {
                             {/* SOCIAL MEDIA */}
 
                             {element === "socialmedia" &&
+                            ( isMobile ?
                                 <div className="socials d-flex flex-column align-items-start gap-2">
-
+                                    {/* row 1 */}
                                     <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "one" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/fatmapost.jpg"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("one")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                        <div className={`media-placeholder ${selected === "two" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/zoneneutre-post.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("two")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* row 2 */}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "three" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type2"
+                                                src="./images/fb-cover.jpg"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("three")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
 
+                                        <div className={`media-placeholder ${selected === "four" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/post-elisethere-modif.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("four")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* row 3*/}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "six" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/post-hni.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("six")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                        <div className={`media-placeholder ${selected === "five" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type2"
+                                                src="./images/fb-cover-v2.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("five")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* row 4 */}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "ten" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/social-1.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("ten")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+
+                                        <div className={`media-placeholder ${selected === "eleven" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/social-2.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("eleven")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* row 5 */}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "seven" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/batard-2.jpg"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("seven")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                        <div className={`media-placeholder video-placeholder ${selected === "nine" ? 'selected' : ''}`}>
+                                            <video
+                                                playsInline
+                                                muted
+                                                autoPlay
+                                                loop
+                                                onLoadedData={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("nine")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            >
+                                                <source
+                                                    src="./images/batard-vid.mp4"
+                                                    type="video/mp4"
+                                                />
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                                :
+                                <div className="socials d-flex flex-column align-items-start gap-2">
+                                    <div className="d-flex gap-2">
                                         <div className={`media-placeholder ${selected === "one" ? 'selected' : ''}`}>
                                             <img
                                                 className="type1"
@@ -236,12 +355,105 @@ export default function Home() {
                                     </div>
 
                                 </div>
+                            )
                             }
 
 
                             {/* POSTERS */}
 
                             {element === "posters" &&
+                            ( isMobile ?
+                                <div className="socials d-flex flex-column align-items-start gap-2">
+                                    {/* row1 */}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "one" ? 'selected' : ''}`}>
+                                            <img
+                                                src="./images/poster-1.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("one")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+
+                                        <div className={`media-placeholder ${selected === "two" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/poster-2.jpg"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("two")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* row 2 */}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "three" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type2"
+                                                src="./images/poster-3.jpg"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("three")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+
+                                        <div className={`media-placeholder ${selected === "four" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/poster-4.jpg"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("four")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+
+                                    </div>
+                                    {/* row 3 */}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "five" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/poster-6.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("five")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                        <div className={`media-placeholder ${selected === "seven" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type2"
+                                                src="./images/poster-7.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("seven")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* row 4 */}
+                                    <div className="d-flex gap-2">
+                                        <div className={`media-placeholder ${selected === "ten" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/poster-8.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("ten")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+
+                                        <div className={`media-placeholder ${selected === "six" ? 'selected' : ''}`}>
+                                            <img
+                                                className="type1"
+                                                src="./images/VIE.png"
+                                                onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                                                onMouseEnter={() => setSelected("six")}
+                                                onMouseLeave={() => setSelected(null)}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            :
+                            // desktop
                                 <div className="socials d-flex flex-column align-items-start gap-2">
 
                                     <div className="d-flex gap-2">
@@ -329,6 +541,7 @@ export default function Home() {
                                     </div>
 
                                 </div>
+                            )    
                             }
 
 
@@ -346,12 +559,15 @@ export default function Home() {
                                             >
                                                 Pour Bâtard Festival: And So You're Back - post réseaux sociaux
                                             </h3>
-
-                                            <div className="langues">
-                                                {(!selectedText || selectedText === "one") &&
-                                                    <p>(EN)</p>
-                                                }
-                                            </div>
+                                            {isMobile ?
+                                                null
+                                            :
+                                                <div className="langues">
+                                                    {(!selectedText || selectedText === "one") &&
+                                                        <p>(EN)</p>
+                                                    }
+                                                </div>
+                                            }
                                         </div>
 
                                         {selectedText === "one" &&
@@ -379,12 +595,15 @@ export default function Home() {
                                             >
                                                 Pour Bâtard Festival: Magic Cells - post réseaux sociaux
                                             </h3>
-
-                                            <div className="langues">
-                                                {(!selectedText || selectedText === "two") &&
-                                                    <p>(EN)</p>
-                                                }
-                                            </div>
+                                            {isMobile ?
+                                                null
+                                            :
+                                                <div className="langues">
+                                                    {(!selectedText || selectedText === "two") &&
+                                                        <p>(EN)</p>
+                                                    }
+                                                </div>
+                                            }
                                         </div>
 
                                         {selectedText === "two" &&
@@ -410,12 +629,15 @@ export default function Home() {
                                             >
                                                 Pour Medeber Teatro - teaser exposition
                                             </h3>
-
-                                            <div className="langues">
-                                                {(!selectedText || selectedText === "three") &&
-                                                    <p>(FR)</p>
-                                                }
-                                            </div>
+                                            {isMobile ?
+                                                null
+                                            :
+                                                <div className="langues">
+                                                    {(!selectedText || selectedText === "three") &&
+                                                        <p>(FR)</p>
+                                                    }
+                                                </div>
+                                            }
                                         </div>
 
                                         {selectedText === "three" &&
@@ -438,12 +660,15 @@ export default function Home() {
                                             >
                                                 Pour Medeber Teatro - texte exposition URBE
                                             </h3>
-
+                                            {isMobile ?
+                                                null
+                                            :
                                             <div className="langues">
                                                 {(!selectedText || selectedText === "four") &&
                                                     <p>(EN)</p>
                                                 }
                                             </div>
+                                            }
                                         </div>
 
                                         {selectedText === "four" &&
@@ -483,12 +708,15 @@ export default function Home() {
                                             >
                                                 Pour Medeber Teatro - article de blog
                                             </h3>
-
+                                            {isMobile ?
+                                                null
+                                            :
                                             <div className="langues">
                                                 {(!selectedText || selectedText === "five") &&
                                                     <p>(EN)</p>
                                                 }
                                             </div>
+                                            }
                                         </div>
 
                                         {selectedText === "five" &&
@@ -520,12 +748,15 @@ export default function Home() {
                                             >
                                                 Pour Medeber Teatro - article de blog
                                             </h3>
-
-                                            <div className="langues">
-                                                {(!selectedText || selectedText === "six") &&
-                                                    <p>(EN)</p>
-                                                }
-                                            </div>
+                                            {isMobile ?
+                                                null
+                                            :
+                                                <div className="langues">
+                                                    {(!selectedText || selectedText === "six") &&
+                                                        <p>(EN)</p>
+                                                    }
+                                                </div>
+                                            }
                                         </div>
 
                                         {selectedText === "six" &&
@@ -557,12 +788,15 @@ export default function Home() {
                                             >
                                                 Pour Karoo - article de blog
                                             </h3>
-
+                                            {isMobile ?
+                                                null
+                                            :
                                             <div className="langues">
                                                 {(!selectedText || selectedText === "seven") &&
                                                     <p>(FR)</p>
                                                 }
                                             </div>
+                                            }
                                         </div>
 
                                         {selectedText === "seven" &&
@@ -603,30 +837,46 @@ export default function Home() {
 
                                     <div className="d-flex gap-2">
                                         <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard1.mp4" target="blank">Bâtard Festival novembre 2024</a></h3>
-                                        <div className="langues">
-                                            <p>(EN)</p>
-                                        </div>
+                                        {isMobile ?
+                                            null
+                                        :
+                                            <div className="langues">
+                                                <p>(EN)</p>
+                                            </div>
+                                        }
                                     </div>
 
                                     <div className="d-flex gap-2">
                                         <h3><a href="https://chazrsmit.github.io/portfolio-com/images/tinwwp.mp4" target="blank">There is Nothing Wrong with People juin 2023</a></h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(EN, FR, NL)</p>
                                         </div>
+                                        }
                                     </div>
 
                                     <div className="d-flex gap-2">
                                         <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard2.mp4" target="blank">Bâtard Festival novembre 2022</a></h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(EN)</p>
                                         </div>
+                                        }
                                     </div>
 
                                     <div className="d-flex gap-2">
                                         <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard3.mp4" target="blank">Bâtard Festival avril 2022</a></h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(EN)</p>
                                         </div>
+                                        }
                                     </div>
 
                                 </div>
@@ -647,9 +897,13 @@ export default function Home() {
                                                 Dossier de candidature pour la résidence d'artistes Casa Figueira de mars 2026
                                             </a>
                                         </h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(EN)</p>
                                         </div>
+                                        }
                                     </div>
 
                                     <div className="d-flex gap-2">
@@ -661,9 +915,13 @@ export default function Home() {
                                                 Dossier de présentation du Festival Novas Frequências 2025 à São Paulo
                                             </a>
                                         </h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(PT)</p>
                                         </div>
+                                        }
                                     </div>
 
                                     <div className="d-flex gap-2">
@@ -675,9 +933,13 @@ export default function Home() {
                                                 Communiqué de presse Color Green 2024
                                             </a>
                                         </h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(FR)</p>
                                         </div>
+                                        }
                                     </div>
 
                                     <div className="d-flex gap-2">
@@ -689,9 +951,13 @@ export default function Home() {
                                                 Rapport d'activité 2021 de Medeber Teatro
                                             </a>
                                         </h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(FR)</p>
                                         </div>
+                                        }
                                     </div>
 
                                     <div className="d-flex gap-2">
@@ -703,9 +969,13 @@ export default function Home() {
                                                 Communiqué de presse Garages Numériques 2019
                                             </a>
                                         </h3>
+                                        {isMobile ?
+                                                null
+                                            :
                                         <div className="langues">
                                             <p>(FR)</p>
                                         </div>
+                                        }
                                     </div>
 
                                 </div>
