@@ -35,8 +35,10 @@
         opacity: 1;
     }
 
+    h3 > a { text-decoration: none;}
+
     h4 {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     h3:hover {
@@ -124,7 +126,7 @@
 
     .nb {
         position: absolute;
-        bottom: 0;
+        bottom: 0.6rem;
         left: 1rem;
     }
 
@@ -164,4 +166,14 @@
         width: auto;
         height: 320px;
         filter: none;
+    }
+
+    .nb p > a {
+        text-decoration:none;
+        color: black;
+    }
+
+    .nb p > a:hover{
+        text-decoration: underline !important;
+        text-decoration-thickness: 1.5;
     }

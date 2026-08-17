@@ -21,7 +21,7 @@ body {
     padding: 0;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, a {
     margin: 0;
     padding: 0;
 }
