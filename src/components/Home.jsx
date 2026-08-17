@@ -994,10 +994,11 @@ export default function Home() {
                     }
 
                 </AnimatePresence>
-
+                {!element && 
                 <div className="nb">
                     <p>Charlotte Smit <a href="https://www.instagram.com/char__smit/" target="blank">@</a> <a href="https://github.com/chazrsmit" target="blank">@</a></p>
                 </div>
+                }
 
             </section>
         </>
