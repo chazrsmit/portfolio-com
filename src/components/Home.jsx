@@ -557,7 +557,7 @@ export default function Home() {
                                                 onClick={() => handleClickText("one")}
                                                 className={selectedText && selectedText !== "one" ? 'gone' : ''}
                                             >
-                                                Pour Bâtard Festival: And So You're Back - post réseaux sociaux
+                                                ↔ Pour Bâtard Festival: And So You're Back - post réseaux sociaux
                                             </h3>
                                             {isMobile ?
                                                 null
@@ -593,7 +593,7 @@ export default function Home() {
                                                 onClick={() => handleClickText("two")}
                                                 className={selectedText && selectedText !== "two" ? 'gone' : ''}
                                             >
-                                                Pour Bâtard Festival: Magic Cells - post réseaux sociaux
+                                                ↔ Pour Bâtard Festival: Magic Cells - post réseaux sociaux
                                             </h3>
                                             {isMobile ?
                                                 null
@@ -627,7 +627,7 @@ export default function Home() {
                                                 onClick={() => handleClickText("three")}
                                                 className={selectedText && selectedText !== "three" ? 'gone' : ''}
                                             >
-                                                Pour Medeber Teatro - teaser exposition
+                                                ↔ Pour Medeber Teatro - teaser exposition
                                             </h3>
                                             {isMobile ?
                                                 null
@@ -658,7 +658,7 @@ export default function Home() {
                                                 onClick={() => handleClickText("four")}
                                                 className={selectedText && selectedText !== "four" ? 'gone' : ''}
                                             >
-                                                Pour Medeber Teatro - texte exposition URBE
+                                                ↔ Pour Medeber Teatro - texte exposition URBE
                                             </h3>
                                             {isMobile ?
                                                 null
@@ -706,7 +706,7 @@ export default function Home() {
                                                 onClick={() => handleClickText("five")}
                                                 className={selectedText && selectedText !== "five" ? 'gone' : ''}
                                             >
-                                                Pour Medeber Teatro - article de blog
+                                                ↔ Pour Medeber Teatro - article de blog
                                             </h3>
                                             {isMobile ?
                                                 null
@@ -746,7 +746,7 @@ export default function Home() {
                                                 onClick={() => handleClickText("six")}
                                                 className={selectedText && selectedText !== "six" ? 'gone' : ''}
                                             >
-                                                Pour Medeber Teatro - article de blog
+                                                ↔ Pour Medeber Teatro - article de blog
                                             </h3>
                                             {isMobile ?
                                                 null
@@ -786,7 +786,7 @@ export default function Home() {
                                                 onClick={() => handleClickText("seven")}
                                                 className={selectedText && selectedText !== "seven" ? 'gone' : ''}
                                             >
-                                                Pour Karoo - article de blog
+                                                ↔ Pour Karoo - article de blog
                                             </h3>
                                             {isMobile ?
                                                 null
@@ -836,7 +836,7 @@ export default function Home() {
                                 <div className="textes">
 
                                     <div className="d-flex gap-2">
-                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard1.mp4" target="blank">Bâtard Festival novembre 2024</a></h3>
+                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard1.mp4" target="blank">↔ Bâtard Festival novembre 2024</a></h3>
                                         {isMobile ?
                                             null
                                         :
@@ -847,7 +847,7 @@ export default function Home() {
                                     </div>
 
                                     <div className="d-flex gap-2">
-                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/tinwwp.mp4" target="blank">There is Nothing Wrong with People juin 2023</a></h3>
+                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/tinwwp.mp4" target="blank">↔ There is Nothing Wrong with People juin 2023</a></h3>
                                         {isMobile ?
                                                 null
                                             :
@@ -858,7 +858,7 @@ export default function Home() {
                                     </div>
 
                                     <div className="d-flex gap-2">
-                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard2.mp4" target="blank">Bâtard Festival novembre 2022</a></h3>
+                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard2.mp4" target="blank">↔ Bâtard Festival novembre 2022</a></h3>
                                         {isMobile ?
                                                 null
                                             :
@@ -869,7 +869,7 @@ export default function Home() {
                                     </div>
 
                                     <div className="d-flex gap-2">
-                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard3.mp4" target="blank">Bâtard Festival avril 2022</a></h3>
+                                        <h3><a href="https://chazrsmit.github.io/portfolio-com/images/batard3.mp4" target="blank">↔ Bâtard Festival avril 2022</a></h3>
                                         {isMobile ?
                                                 null
                                             :
@@ -894,7 +894,7 @@ export default function Home() {
                                                 href="https://drive.google.com/file/d/1EuF_b8MkH022mt4L9CFgY9a1Xu6H-B6L/view?usp=sharing"
                                                 target="blank"
                                             >
-                                                Dossier de candidature pour la résidence d'artistes Casa Figueira de mars 2026
+                                                ↔ Dossier de candidature pour la résidence d'artistes Casa Figueira de mars 2026
                                             </a>
                                         </h3>
                                         {isMobile ?
@@ -912,7 +912,7 @@ export default function Home() {
                                                 href="https://www.figma.com/deck/RnLMxk7iB59o4jNw0kAwrF/NF-15?node-id=1-848&t=ACBT6d4vWIyfVDdM-1"
                                                 target="blank"
                                             >
-                                                Dossier de présentation du Festival Novas Frequências 2025 à São Paulo
+                                                ↔ Dossier de présentation du Festival Novas Frequências 2025 à São Paulo
                                             </a>
                                         </h3>
                                         {isMobile ?
@@ -930,7 +930,7 @@ export default function Home() {
                                                 href="https://drive.google.com/file/d/1vFn5VgqWoZii0pIF0SHwbXsa8wa4ZpGS/view?usp=sharing"
                                                 target="blank"
                                             >
-                                                Communiqué de presse Color Green 2024
+                                                ↔ Communiqué de presse Color Green 2024
                                             </a>
                                         </h3>
                                         {isMobile ?
@@ -948,7 +948,7 @@ export default function Home() {
                                                 href="https://chazrsmit.github.io/portfolio-com/Medeber-2021.pdf"
                                                 target="blank"
                                             >
-                                                Rapport d'activité 2021 de Medeber Teatro
+                                                ↔ Rapport d'activité 2021 de Medeber Teatro
                                             </a>
                                         </h3>
                                         {isMobile ?
@@ -966,7 +966,7 @@ export default function Home() {
                                                 href="https://drive.google.com/file/d/12wFyGuJ_qhllsIeERNqfl862eoXHC1IL/view?usp=sharing"
                                                 target="blank"
                                             >
-                                                Communiqué de presse Garages Numériques 2019
+                                                ↔ Communiqué de presse Garages Numériques 2019
                                             </a>
                                         </h3>
                                         {isMobile ?
@@ -996,7 +996,7 @@ export default function Home() {
                 </AnimatePresence>
                 {!element && 
                 <div className="nb">
-                    <p>Charlotte Smit <a href="https://www.instagram.com/char__smit/" target="blank">@</a> <a href="https://github.com/chazrsmit" target="blank">@</a></p>
+                    <p>par Charlotte Smit <a href="https://www.instagram.com/char__smit/" target="blank">@</a> <a href="https://github.com/chazrsmit" target="blank">@</a></p>
                 </div>
                 }
 
